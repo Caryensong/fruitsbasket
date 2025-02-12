@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   template: `<footer>
   <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="1440" height="127" viewBox="0 0 1440 127" fill="none">
       <path d="M0 127H1440V24.9102C1257.5 7.95 981.576 -0.999994 719.5 -0.999994C457.835 -0.999994 210.28 4.9 0 24.7883V127Z" fill="#09212A"/>
