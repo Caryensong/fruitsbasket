@@ -19,7 +19,8 @@
                             <img src="./assets/img/stars/star-empty.svg" alt="" srcset="">
                         }
                     }
-                        <p [ngStyle] ="{'background-color': item.stars > 3 ? fontColorGood : fontcolorBad}">({{item.stars}})</p>
+                        <!-- <p [ngStyle] ="{color: item.stars > 3 ? fontColorGood : fontcolorBad}">({{item.stars}})</p> -->
+                        <p [ngClass] ="{'fontColorBad': item.stars < 3, 'fontColorGood': item.stars > 3}">({{item.stars}})</p>
                     </div>
                 </div>
                 <div><b>Art:</b><br>{{item.genus}}</div>
